@@ -1,6 +1,4 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../services/mock_api_service.dart';
 
 class DynamicFormRenderer extends StatefulWidget {
@@ -8,10 +6,10 @@ class DynamicFormRenderer extends StatefulWidget {
   final Function(Map<String, dynamic>)? onSubmit;
 
   const DynamicFormRenderer({
-    Key? key,
+    super.key,
     required this.schema,
     this.onSubmit,
-  }) : super(key: key);
+  });
 
   @override
   State<DynamicFormRenderer> createState() => _DynamicFormRendererState();
@@ -75,7 +73,7 @@ class _DynamicFormRendererState extends State<DynamicFormRenderer> {
         );
 
       case 'AppBar':
-        return null; // Handled in Scaffold case
+        return Container(); // AppBar is handled in Scaffold case
 
       case 'SingleChildScrollView':
         return SingleChildScrollView(
@@ -133,9 +131,7 @@ class _DynamicFormRendererState extends State<DynamicFormRenderer> {
         );
 
       default:
-        return Container(
-          child: Text('Unknown widget type: $type'),
-        );
+        return Text('Unknown widget type: $type');
     }
   }
 
@@ -182,7 +178,7 @@ class _DynamicFormRendererState extends State<DynamicFormRenderer> {
     final displayField = items['displayField'] as String?;
 
     if (source == null || !_dropdownData.containsKey(source)) {
-      return Container(child: Text('Loading...'));
+      return const Text('Loading...');
     }
 
     final data = _dropdownData[source]!;
@@ -200,7 +196,7 @@ class _DynamicFormRendererState extends State<DynamicFormRenderer> {
       items: data.map<DropdownMenuItem<dynamic>>((item) {
         return DropdownMenuItem<dynamic>(
           value: item[valueField],
-          child: Text(item[displayField].toString()),
+          child: Text(item[displayField]?.toString() ?? ''),
         );
       }).toList(),
       onChanged: (value) {
