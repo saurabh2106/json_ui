@@ -22,9 +22,14 @@ class MockApiService {
       
       // Load the JSON file from assets
       final String jsonString = await rootBundle.loadString('assets/$assetPath');
-      final List<dynamic> data = json.decode(jsonString);
+      final dynamic decodedData = json.decode(jsonString);
       
-      return data;
+      // Ensure the data is a list
+      if (decodedData is List) {
+        return decodedData;
+      } else {
+        throw Exception('Expected JSON array but got ${decodedData.runtimeType}');
+      }
     } catch (e) {
       throw Exception('Failed to load mock data from $assetPath: $e');
     }
@@ -36,9 +41,14 @@ class MockApiService {
       await _simulateNetworkDelay();
       
       final String jsonString = await rootBundle.loadString('assets/ui_schema.json');
-      final Map<String, dynamic> schema = json.decode(jsonString);
+      final dynamic decodedData = json.decode(jsonString);
       
-      return schema;
+      // Ensure the data is a map
+      if (decodedData is Map<String, dynamic>) {
+        return decodedData;
+      } else {
+        throw Exception('Expected JSON object but got ${decodedData.runtimeType}');
+      }
     } catch (e) {
       throw Exception('Failed to load UI schema: $e');
     }

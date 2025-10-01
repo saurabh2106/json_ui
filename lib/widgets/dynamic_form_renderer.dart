@@ -160,7 +160,7 @@ class _DynamicFormRendererState extends State<DynamicFormRenderer> {
       onSaved: (value) {
         final labelText = decoration?['labelText'] as String?;
         if (labelText != null) {
-          _formData[labelText] = value;
+          _formData[labelText] = value ?? '';
         }
       },
     );
