@@ -1,0 +1,40 @@
+Prompt
+
+Task:
+Create a Flutter UI screen from a JSON file contained in the assets/ folder. The JSON will define the UI structure and mock data. Use the already installed stac package to dynamically render the screen.
+
+Requirements:
+
+Load the UI schema JSON from assets/ui_schema.json.
+
+Parse it using the stac package and render the UI accordingly.
+
+Create mock API calls where required:
+
+Place mock API JSON data inside assets/mock/ folder.
+
+Example: assets/mock/users.json, assets/mock/products.json.
+
+Simulate fetching these JSON files with Future.delayed to mimic API latency.
+
+Make sure to configure pubspec.yaml to include assets:
+
+flutter:
+  assets:
+    - assets/ui_schema.json
+    - assets/mock/
+
+
+Refer to STAC documentation for supported widgets and schema:
+
+https://docs.stac.dev/
+
+https://playground.stac.dev/
+
+Acceptance Criteria:
+
+The screen should fully render based on the JSON schema, not hardcoded widgets.
+
+Mock API endpoints should behave like async fetch calls returning data from local JSON files.
+
+The solution must be self-contained and production-ready.
