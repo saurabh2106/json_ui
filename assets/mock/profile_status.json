@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Inactive"
+  },
+  {
+    "id": 3,
+    "name": "Pending Review"
+  },
+  {
+    "id": 4,
+    "name": "Approved"
+  },
+  {
+    "id": 5,
+    "name": "Rejected"
+  }
+]

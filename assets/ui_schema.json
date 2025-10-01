@@ -1,0 +1,461 @@
+{
+  "type": "Scaffold",
+  "appBar": {
+    "type": "AppBar",
+    "title": "Profile Screen"
+  },
+  "body": {
+    "type": "SingleChildScrollView",
+    "child": {
+      "type": "Padding",
+      "padding": {
+        "all": 16.0
+      },
+      "child": {
+        "type": "Column",
+        "crossAxisAlignment": "start",
+        "children": [
+          {
+            "type": "Card",
+            "child": {
+              "type": "Padding",
+              "padding": {
+                "all": 16.0
+              },
+              "child": {
+                "type": "Column",
+                "crossAxisAlignment": "start",
+                "children": [
+                  {
+                    "type": "Text",
+                    "data": "BASIC DETAILS",
+                    "style": {
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "DropdownButtonFormField",
+                    "decoration": {
+                      "labelText": "Job",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required",
+                    "items": {
+                      "source": "mock/jobs.json",
+                      "valueField": "id",
+                      "displayField": "jobTitle"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "First Name",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required"
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Email",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required",
+                    "keyboardType": "emailAddress"
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Contact Number",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required",
+                    "keyboardType": "phone"
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Alternate Contact Number",
+                      "border": "OutlineInputBorder"
+                    },
+                    "keyboardType": "phone"
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "DropdownButtonFormField",
+                    "decoration": {
+                      "labelText": "Designation",
+                      "border": "OutlineInputBorder"
+                    },
+                    "items": {
+                      "source": "mock/designations.json",
+                      "valueField": "id",
+                      "displayField": "name"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "DropdownButtonFormField",
+                    "decoration": {
+                      "labelText": "Profile Status",
+                      "border": "OutlineInputBorder"
+                    },
+                    "items": {
+                      "source": "mock/profile_status.json",
+                      "valueField": "id",
+                      "displayField": "name"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "SizedBox",
+            "height": 16
+          },
+          {
+            "type": "Card",
+            "child": {
+              "type": "Padding",
+              "padding": {
+                "all": 16.0
+              },
+              "child": {
+                "type": "Column",
+                "crossAxisAlignment": "start",
+                "children": [
+                  {
+                    "type": "Text",
+                    "data": "LOCATION",
+                    "style": {
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "DropdownButtonFormField",
+                    "decoration": {
+                      "labelText": "Country",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required",
+                    "items": {
+                      "source": "mock/countries.json",
+                      "valueField": "id",
+                      "displayField": "name"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "DropdownButtonFormField",
+                    "decoration": {
+                      "labelText": "State",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required",
+                    "items": {
+                      "source": "mock/states.json",
+                      "valueField": "id",
+                      "displayField": "name"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "DropdownButtonFormField",
+                    "decoration": {
+                      "labelText": "City",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required",
+                    "items": {
+                      "source": "mock/cities.json",
+                      "valueField": "id",
+                      "displayField": "name"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Pincode",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required",
+                    "keyboardType": "number"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "SizedBox",
+            "height": 16
+          },
+          {
+            "type": "Card",
+            "child": {
+              "type": "Padding",
+              "padding": {
+                "all": 16.0
+              },
+              "child": {
+                "type": "Column",
+                "crossAxisAlignment": "start",
+                "children": [
+                  {
+                    "type": "Text",
+                    "data": "REFERRED BY (OPTIONAL)",
+                    "style": {
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Employee Name",
+                      "border": "OutlineInputBorder"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "DropdownButtonFormField",
+                    "decoration": {
+                      "labelText": "Designation",
+                      "border": "OutlineInputBorder"
+                    },
+                    "items": {
+                      "source": "mock/designations.json",
+                      "valueField": "id",
+                      "displayField": "name"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "SizedBox",
+            "height": 16
+          },
+          {
+            "type": "Card",
+            "child": {
+              "type": "Padding",
+              "padding": {
+                "all": 16.0
+              },
+              "child": {
+                "type": "Column",
+                "crossAxisAlignment": "start",
+                "children": [
+                  {
+                    "type": "Text",
+                    "data": "EDUCATION DETAILS",
+                    "style": {
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "DropdownButtonFormField",
+                    "decoration": {
+                      "labelText": "Education Level",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required",
+                    "items": {
+                      "source": "mock/education_levels.json",
+                      "valueField": "id",
+                      "displayField": "name"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Board/University",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required"
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Specialization",
+                      "border": "OutlineInputBorder"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Percentage",
+                      "border": "OutlineInputBorder"
+                    },
+                    "keyboardType": "number"
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Passing Year",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required",
+                    "keyboardType": "number"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "SizedBox",
+            "height": 16
+          },
+          {
+            "type": "Card",
+            "child": {
+              "type": "Padding",
+              "padding": {
+                "all": 16.0
+              },
+              "child": {
+                "type": "Column",
+                "crossAxisAlignment": "start",
+                "children": [
+                  {
+                    "type": "Text",
+                    "data": "WORK EXPERIENCE",
+                    "style": {
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Previous Company Name",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required"
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Designation",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required"
+                  },
+                  {
+                    "type": "SizedBox",
+                    "height": 16
+                  },
+                  {
+                    "type": "TextFormField",
+                    "decoration": {
+                      "labelText": "Experience (Years)",
+                      "border": "OutlineInputBorder"
+                    },
+                    "validator": "required",
+                    "keyboardType": "number"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "SizedBox",
+            "height": 24
+          },
+          {
+            "type": "SizedBox",
+            "width": "double.infinity",
+            "child": {
+              "type": "ElevatedButton",
+              "onPressed": "handleSubmit",
+              "child": {
+                "type": "Text",
+                "data": "Submit"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

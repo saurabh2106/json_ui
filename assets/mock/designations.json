@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Junior Developer"
+  },
+  {
+    "id": 2,
+    "name": "Senior Developer"
+  },
+  {
+    "id": 3,
+    "name": "Team Lead"
+  },
+  {
+    "id": 4,
+    "name": "Project Manager"
+  },
+  {
+    "id": 5,
+    "name": "Technical Architect"
+  },
+  {
+    "id": 6,
+    "name": "DevOps Engineer"
+  },
+  {
+    "id": 7,
+    "name": "QA Engineer"
+  }
+]

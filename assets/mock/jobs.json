@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "jobTitle": "Software Engineer",
+    "department": "Engineering",
+    "location": "Remote"
+  },
+  {
+    "id": 2,
+    "jobTitle": "Frontend Developer",
+    "department": "Engineering",
+    "location": "New York"
+  },
+  {
+    "id": 3,
+    "jobTitle": "Backend Developer",
+    "department": "Engineering",
+    "location": "San Francisco"
+  },
+  {
+    "id": 4,
+    "jobTitle": "Product Manager",
+    "department": "Product",
+    "location": "Austin"
+  },
+  {
+    "id": 5,
+    "jobTitle": "UI/UX Designer",
+    "department": "Design",
+    "location": "Los Angeles"
+  }
+]

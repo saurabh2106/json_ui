@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "California",
+    "countryId": 1
+  },
+  {
+    "id": 2,
+    "name": "New York",
+    "countryId": 1
+  },
+  {
+    "id": 3,
+    "name": "Texas",
+    "countryId": 1
+  },
+  {
+    "id": 4,
+    "name": "Maharashtra",
+    "countryId": 2
+  },
+  {
+    "id": 5,
+    "name": "Karnataka",
+    "countryId": 2
+  },
+  {
+    "id": 6,
+    "name": "Delhi",
+    "countryId": 2
+  },
+  {
+    "id": 7,
+    "name": "Ontario",
+    "countryId": 3
+  },
+  {
+    "id": 8,
+    "name": "British Columbia",
+    "countryId": 3
+  }
+]

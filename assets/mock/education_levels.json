@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "High School"
+  },
+  {
+    "id": 2,
+    "name": "Bachelor's Degree"
+  },
+  {
+    "id": 3,
+    "name": "Master's Degree"
+  },
+  {
+    "id": 4,
+    "name": "PhD"
+  },
+  {
+    "id": 5,
+    "name": "Diploma"
+  },
+  {
+    "id": 6,
+    "name": "Certificate"
+  }
+]
