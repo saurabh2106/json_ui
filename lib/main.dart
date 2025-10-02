@@ -57,8 +57,6 @@ class _JsonUIScreenState extends State<JsonUIScreen> {
 
   void _handleFormSubmit(Map<String, dynamic> formData) {
     // Handle successful form submission
-    print('Form submitted with data: $formData');
-    
     // You can navigate to a success page or perform other actions here
     showDialog(
       context: context,
